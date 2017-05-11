@@ -1,58 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Kundan Singh</title>
     <style>
         body {
-            background-color: #ddd !important;;
-            font-family:Verdana;
+            background-color: #ddd !important;
+            font-family: Verdana;
+            font-size: 14px;
         }
+        
         .text-center {
             margin: 20px auto;
             width: 40%;
-            font-size: 18px;
             line-height: 2em;
             background: #ddd;
             text-align: center;
+            font-size: 1.5em;
         }
-        .text-link:active, .text-link:visited, .text-link {
-            color: #666;
+        
+        .text-link:active,
+        .text-link:visited,
+        .text-link {
+            color: #BA0C2F;
             text-decoration: none;
         }
+        
         .text-link:hover {
             color: blue;
         }
-        .container{
+        
+        .container {
             margin-top: 60px;
         }
+        
         .pokeball {
             box-sizing: border-box;
-            --pokeball-size: 250px;
-            --pokeball-inner-size: 80px;
-            --pokeball-border-size: 10px;
-
+            --pokeball-size: 105px;
+            --pokeball-inner-size: 35px;
+            --pokeball-border-size: 7px;
             --before-diameter: var(--pokeball-inner-size);
             --after-diameter: calc(var(--before-diameter) - (var(--pokeball-border-size) * 3));
-
             border: var(--pokeball-border-size) solid #262122;
             width: var(--pokeball-size);
             height: var(--pokeball-size);
             border-radius: 100%;
             margin: 0 auto;
             position: relative;
-
-            background: linear-gradient(
-                150deg,
-                #BA0C2F 0%,
-                #BA0C2F 44%,
-                #262122 44%,
-                #262122 56%,
-                #fff 56%,
-                #fff 100%
-            );
+            background: linear-gradient( 150deg, #BA0C2F 0%, #BA0C2F 44%, #262122 44%, #262122 56%, #fff 56%, #fff 100%);
         }
-
+        
         .pokeball:before,
         .pokeball:after {
             content: " ";
@@ -60,68 +58,78 @@
             display: block;
             position: absolute;
         }
-
-        .pokeball:before{
+        
+        .pokeball:before {
             width: var(--before-diameter);
             height: var(--before-diameter);
             top: calc(50% - var(--before-diameter) / 2);
             left: calc(50% - var(--before-diameter) / 2);
             background: #262122;
         }
-
-        .pokeball:after{
+        
+        .pokeball:after {
             width: var(--after-diameter);
             height: var(--after-diameter);
-        
             top: calc(50% - ((var(--after-diameter) / 2) + var(--pokeball-border-size)));
             left: calc(50% - ((var(--after-diameter) / 2) + var(--pokeball-border-size)));
-
             background: #fff;
             border: double var(--pokeball-border-size) #262122;
         }
-
+        
         .pokeball-animated {
             animation-duration: 1s;
             animation-fill-mode: both;
             animation-iteration-count: infinite;
             animation-name: shake;
         }
-
+        
         @keyframes shake {
             from {
                 transform: none;
             }
-
             20% {
                 transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -10deg);
             }
-
             40% {
                 transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 5deg);
             }
-
             50% {
                 transform: translate3d(-10%, 0, 0) rotate3d(0, 0, 1, -10deg);
             }
-
             60% {
                 transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 5deg);
             }
-
             to {
                 transform: none;
             }
         }
-
+        /* Media Queries*/
+        
+        @media only screen and (max-width: 1000px) {
+            body {
+                font-size: 35px;
+            }
+            .text-center {
+                width: 80%;
+            }
+            .pokeball {
+                box-sizing: border-box;
+                --pokeball-size: 300px;
+                --pokeball-inner-size: 100px;
+                --pokeball-border-size: 20px;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="pokeball pokeball-animated"></div>
     </div>
     <div class="text-center">
-        I'm revamping up this page from scratch again. All the code is still available on my <a class="text-link" href="https://www.github.com/kundanvishen">github profile.</a>
-        and <a class="text-link" href="https://kundanvishen.github.io/portfolio">old portfolio</a>
+        <p>Cool Animation! Right?</p>
+        <p>Well, The page is under redesign. Check out my <a class="text-link" href="https://kundanvishen.github.io/projects/">Projects Page</a>. Even better idea is to check the code on my <a class="text-link" href="https://www.github.com/kundanvishen">Github Profile</a>.</p>
     </div>
 </body>
+
 </html>
