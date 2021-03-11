@@ -2,9 +2,9 @@
 title               : Kundan Singh
 description         : >-
                       FullStack Javascript Dev with an acumen for business growth :chart_with_upwards_trend:
-baseurl             : "/me"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
-repository          : kundanvishen/me     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
-remote_theme        : kundanvishen/me
+baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+repository          : kundanvishen/kundanvishen.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+remote_theme        : kundanvishen
 
 
 ### Plugins ###
