@@ -6,11 +6,7 @@ description: I run Hoomans, a Dubai-based software and design studio. We build A
 
 # I run Hoomans. We build AI agents that answer business leads in seconds.
 
-I'm Kundan Singh. I spent ten years building products for companies in India and the Gulf, including Neom, G42 and the Indian Energy Exchange. Now I run [Hoomans](https://hoomans.tech), a software and design studio based in Dubai. The team is small on purpose: everyone here has shipped production work for years, and you talk directly to the people building yours.
-
-> "I've come across a few—rare, but definitely inspiring! You were one of them."
->
-> <cite>Jainam Vora, co-founder and CTO at BillMart, former VP at the Indian Energy Exchange, asked whether 10x engineers are real</cite>
+I'm Kundan Singh. I spent ten years shipping production software for startups, enterprises and government teams across India and the Gulf. Now I run [Hoomans](https://hoomans.tech), a software and design studio based in Dubai. The team is small on purpose: everyone here has shipped production work for years, and you talk directly to the people building yours.
 
 ## Building now
 
