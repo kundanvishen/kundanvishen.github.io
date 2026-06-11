@@ -1,96 +1,20 @@
-### Site Settings ###
-title               : Kundan Singh
-description         : >-
-                      FullStack Javascript Dev with an acumen for business growth :chart_with_upwards_trend:
-baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
-repository          : kundanvishen/kundanvishen.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
-remote_theme        : kundanvishen
+title: Kundan Singh
+description: I run Hoomans. We build AI agents that answer business leads in seconds.
+url: "https://kundanvishen.com"
 
+markdown: kramdown
+permalink: /writing/:title/
 
-### Plugins ###
-plugins:
-  - jemoji
-
-
-### Navbar Settings ###
-nav_exclude:                                            # The following paths are excluded from navbar
-  - pages/tags.html
-  - pages/404.html
-  - pages/index.md
-  - documentation/partials/**                           # For Documentation Only
-
-
-### Author Info ###
-author:
-  name              : Kundan Singh
-  image             : https://avatars.githubusercontent.com/u/8252717
-  # behance           : your_username
-# dribbble          : your_username
-  email             : kundanvishen@gmail.com
-  # facebook          : your_username
-  github            : kundanvishen
-# gitlab            : your_username
-  instagram         : kundanvishen
-# kaggle            : your_username
-  linkedin          : kundan1
-  medium            : kundanvishen
-# soundcloud        : your_username
-# spotify           : your_username
-# stackoverflow     : your_user_id
-# tumblr            : your_username.tumblr.com
-# twitch            : your_username
-  twitter           : kundanvishen
-# vimeo             : your_username
-# youtube           : your_channel_name
-# keybase           : your_username
-
-
-### Posts ###
-permalink: /blog/:title
-
-
-### Collections ###
-collections:
-  projects:
-    output: true
-    permalink: /projects/:name
-  elements:                                             # For Documentation Only
-    output: true                                        # For Documentation Only
-
-
-### Disqus ###
-disqus:
-  shortname: kundanvishen                     # Your website Shortname on disqus
-
-
-### Analytics ###
-analytics:
-  enabled: true                                        # Set true to enable analytics
-  google:
-    tracking_id: G-SPTQW9SVTR
-
-
-### Defaults for collections ###
 defaults:
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "page"
-  - scope:                                              # For Documentation Only
-      path: ""                                          # For Documentation Only
-      type: "elements"                                  # For Documentation Only
-    values:                                             # For Documentation Only
-      layout: "element"                                 # For Documentation Only
   - scope:
       path: ""
       type: "posts"
     values:
-      comments: false                                   # Set to true to enable disqus comments
+      layout: "post"
 
-### Exclude from processing ###
 exclude:
+  - CLAUDE.md
   - README.md
-  - CONTRIBUTING.md
-  - LICENSE
-  - "*.log"
+  - Gemfile
+  - Gemfile.lock
+  - vendor

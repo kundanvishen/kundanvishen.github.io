@@ -1,20 +1,128 @@
 <!DOCTYPE html>
-
-<html lang="en" class="h-100">
-
-{% include head.html %}
-
-<body class="d-flex flex-column h-100">
-
-  <main class="flex-shrink-0 container mt-5">
-  {% include navbar.html %}
-  {{ content }}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.url == "/" %}{{ site.title }}{% else %}{{ page.title }} · {{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="{% if page.url == '/' %}{{ site.title }}{% else %}{{ page.title }}{% endif %}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="website">
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --muted: #6b6b6b;
+      --rule: #e8e8e8;
+      --bg: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    nav, main, footer {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+    nav {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      padding-top: 2.5rem;
+      padding-bottom: 1.5rem;
+    }
+    nav .name {
+      font-weight: 600;
+      color: var(--text);
+      text-decoration: none;
+    }
+    nav .links a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 1.1rem;
+    }
+    nav .links a:hover { color: var(--text); }
+    main { padding-bottom: 3rem; }
+    h1 {
+      font-size: 1.55rem;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+      margin: 1.25rem 0 1rem;
+    }
+    h2 { font-size: 1.05rem; margin: 2.2rem 0 0.5rem; }
+    p, li { max-width: 38rem; }
+    a {
+      color: var(--text);
+      text-decoration: underline;
+      text-decoration-color: #c0c0c0;
+      text-underline-offset: 3px;
+    }
+    a:hover { text-decoration-color: var(--text); }
+    ul { padding-left: 1.2rem; }
+    li { margin: 0.4rem 0; }
+    .muted { color: var(--muted); }
+    .post-list { list-style: none; padding: 0; }
+    .post-list li {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin: 0.7rem 0;
+    }
+    .post-list time {
+      color: var(--muted);
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+    footer {
+      border-top: 1px solid var(--rule);
+      margin-top: 1rem;
+      padding-top: 1.5rem;
+      padding-bottom: 3.5rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--text); }
+    @media (max-width: 480px) {
+      body { font-size: 16px; }
+      h1 { font-size: 1.35rem; }
+      nav .links a { margin-left: 0.85rem; }
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SPTQW9SVTR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SPTQW9SVTR');
+  </script>
+</head>
+<body>
+  <nav>
+    <a class="name" href="/">Kundan Singh</a>
+    <span class="links">
+      <a href="/now/">Now</a>
+      <a href="/writing/">Writing</a>
+      <a href="/about/">About</a>
+    </span>
+  </nav>
+  <main>
+    {{ content }}
   </main>
-
-  {% include footer.html %}
-  {% include analytics.html %}
-  {% include scripts.html %}
-
+  <footer>
+    <a href="https://hoomans.tech">hoomans.tech</a> ·
+    <a href="https://www.linkedin.com/in/kundan1">LinkedIn</a> ·
+    <a href="https://github.com/kundanvishen">GitHub</a> ·
+    <a href="https://x.com/kundanvishen">X</a> ·
+    <a href="mailto:kundan@hoomans.tech">kundan@hoomans.tech</a>
+  </footer>
 </body>
-
 </html>
