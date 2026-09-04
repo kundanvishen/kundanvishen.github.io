@@ -1,28 +1,28 @@
 ---
 layout: default
 permalink: /
-description: I run Hoomans, a Dubai-based software and design studio. We build AI agents that answer business leads in seconds.
+description: I run Hoomans, a Dubai-based software studio. Right now I'm building Hadir, a WhatsApp front desk that recovers the bookings clinics lose after hours.
 ---
 
-# I run Hoomans. We build AI agents that answer business leads in seconds.
+# I run Hoomans, a small software studio. Right now I'm building Hadir, a WhatsApp front desk that recovers the bookings clinics lose after hours.
 
 I'm Kundan Singh. I spent ten years shipping production software for startups, enterprises and government teams across India and the Gulf. Now I run [Hoomans](https://hoomans.tech), a software and design studio based in Dubai. The team is small on purpose: everyone here has shipped production work for years, and you talk directly to the people building yours.
 
 ## Building now
 
-A WhatsApp AI responder for small businesses. It replies to leads in seconds, answers from the business's own data, qualifies the lead, and books the appointment. Built for clinics, salons, real estate and local services in Middle East, India and Southeast Asia.
+[Hadir](https://gethadir.com) answers a clinic's WhatsApp when the front desk is closed. It quotes only the clinic's real prices and hours, holds a slot on the calendar, reminds the patient, and shows the owner the revenue it recovered. Clinics in the UAE can run a free two-week pilot on their own number.
 
 More on the [Now](/now/) page.
 
-## For agencies and business owners
+## Work
 
-Three ways we work:
+- **Kily** came to Hoomans as an idea. The founder left with product design and a working MVP. In August 2026 [Kily](https://kily.ai) raised ₹30 crore in a round led by Sorin Investments.
+- **A New York design studio** has used Hoomans as the engineering team on several client builds. One of them: the ticketing platform for a Manhattan landmark that sells more than $40 million of tickets a year.
+- **Before Hoomans,** I shipped for teams at Neom, G42, Tamm and the Indian Energy Exchange.
 
-- **White-label AI.** Your clients are asking for AI. We build and deliver it under your brand.
-- **Development.** Web and mobile apps, built by people who have done this for a decade.
-- **Design.** Product and brand design that gets the same care as the code.
+## Working with Hoomans
 
-Details at [hoomans.tech](https://hoomans.tech).
+Hoomans stays open for design and development builds alongside Hadir: web apps, mobile apps, product design, and taking an idea to a first version the way we did with Kily. If you run an agency and need a senior engineering team behind a client build, that's the work Hoomans was built on. Details at [hoomans.tech](https://hoomans.tech).
 
 ## Contact
 
